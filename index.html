@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Nutri Douglas</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-texto">
+            <a href="index.html" aria-label="Ir para a página inicial">
+                <img src="/img/7048691.SVG.jpg" alt="Logo da página" width="50">
+            </a>
+            <h4>Nutri Douglas</h4>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <svg viewBox="0 0 100 80" width="30" height="30" fill="#071739">
+                <rect width="100" height="15" rx="8"></rect>
+                <rect y="30" width="100" height="15" rx="8"></rect>
+                <rect y="60" width="100" height="15" rx="8"></rect>
+            </svg>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="#metodo">Método</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="call-action">
+            <h1 class="titulo-pagina">Resultados reais e consistentes <br>sem dieta radical e baseado em ciência</h1>
+            <p class="texto-introducao">Para quem treina, trabalha, não quer abrir mão de tudo e <br>cansou de recomeçar
+                toda segunda</p>
+
+            <a class="btn-whatsapp"
+                href="https://wa.me/5531995366218?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%21"
+                target="_blank">Ver se a consultoria é pra mim</a>
+        </section>
+
+        <section class="apresentacao">
+            <div class="foto-douglas">
+                <img src="/img/Foto-perfil.jpeg" alt="Foto de perfil do Nutricionista Douglas">
+            </div>
+            <div class="texto-apresentacao">
+                <h1 class="titulo-apresentacao">Muito prazer,<br>eu sou o Douglas Braga Martins.<br></h1>
+                <h3 class="subtitulo">Nutricionista</h3>
+                <p class="descricao-douglas">Atuo com foco em oferecer um cuidado individualizado, sempre baseado na
+                    melhor evidência científica disponível.</p>
+                <p class="descricao-douglas">Acredito que cada pessoa possui uma história única, por isso, minha prática
+                    é guiada pela empatia, escuta ativa e respeito à singularidade de cada um.</p>
+                <p class="descricao-douglas">Mais do que prescrever planos alimentares, meu objetivo é promover saúde,
+                    autonomia e bem-estar de forma ética e consciente.</p>
+            </div>
+        </section>
+
+        <section class="historia-douglas">
+            <div class="transformation-container">
+                <div class="image-box before-image">
+                    <img src="/img/Douglas_Antes.jpeg" alt="Douglas antes da transformação">
+                </div>
+                <div class="image-box after-image">
+                    <img src="/img/Douglas_Depois.jpeg" alt="Douglas depois da transformação">
+                </div>
+            </div>
+
+            <div class="texto-historia">
+                <h2>Eu já estive do outro lado.</h2>
+                <p>Já tive dificuldades com alimentação, rotina e consistência, e sei como é não ver resultado mesmo
+                    tentando.</p>
+                <p>Foi passando por isso que desenvolvi uma forma de trabalho baseada na realidade, não na perfeição.
+                </p>
+                <p>Hoje, além de transformar o meu próprio físico, ajudo outras pessoas a conquistarem resultados de
+                    forma mais leve, sustentável e possível de manter.</p>
+            </div>
+        </section>
+
+        <a class="btn-whatsapp"
+            href="https://wa.me/5531995366218?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%21"
+            target="_blank">Quero um planejamento feito para mim</a>
+
+        <section class="carrosel-pacientes">
+            <div class="texto-carrosel">
+                <h2>Esses são alguns dos resultados de pacientes que confiaram no processo.</h2>
+                <p>Mais do que mudanças físicas, houve transformação na autoestima,<br> na relação com a comida e na
+                    forma
+                    de viver.</p>
+                <p>Com um acompanhamento personalizado e ajustes constantes, <br>é possível gerar resultados reais e
+                    duradouros.</p>
+                <p class="highlight-text">O próximo pode ser você.</p>
+            </div>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn" onclick="moverCarrossel(-1)"
+                    aria-label="Voltar slide">&#10094;</button>
+
+                <div class="carousel-container" id="pacientes-carousel">
+
+                    <div class="carousel-slide">
+                        <div class="transformation-container slide-transformation">
+                            <div class="image-box before-image">
+                                <img src="/img/antes_paciente2.jpeg" alt="Paciente Antes">
+                            </div>
+                            <div class="image-box after-image">
+                                <img src="/img/depois_paciente2.jpeg" alt="Paciente Depois">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="transformation-container slide-transformation">
+                            <div class="image-box before-image">
+                                <img src="/img/antes_paciente_1.JPG" alt="Paciente Antes">
+                            </div>
+                            <div class="image-box after-image">
+                                <img src="/img/depois_paciente_1.jpeg" alt="Paciente Depois">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="transformation-container slide-transformation">
+                            <div class="image-box before-image">
+                                <img src="/img/antes_paciente3.jpeg" alt="Paciente Antes">
+                            </div>
+                            <div class="image-box after-image">
+                                <img src="/img/depois_paciente3.jpeg" alt="Paciente Depois">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn next-btn" onclick="moverCarrossel(1)"
+                    aria-label="Avançar slide">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="Metodo" id="metodo">
+            <span class="badge">★ FILOSOFIA DE TRABALHO</span>
+            <h2>Como funciona o <span>meu método?</span></h2>
+            <div class="cards-container">
+                <div class="card">
+                    <span class="card-number">1</span>
+                    <h3>Base sólida: prática baseada em evidência</h3>
+                    <p class="card-intro">Tudo começa com o que realmente funciona, não com achismos.</p>
+
+                    <ul class="card-features">
+                        <li>Decisões guiadas pela ciência</li>
+                        <li>Estratégias baseadas em evidências reais</li>
+                        <li>Nada de “modinhas” ou promessas vazias</li>
+                        <li>Aplicação no seu contexto de vida, não em um cenário ideal</li>
+                    </ul>
+
+                    <blockquote>Aqui, não existe dieta pronta ou copiada. Tudo começa com uma base bem construída e
+                        personalizada para você.</blockquote>
+                </div>
+
+                <div class="card">
+                    <span class="card-number">2</span>
+                    <h3>Planejamento individual e adaptado à sua realidade</h3>
+                    <p class="card-intro">Cada pessoa tem uma rotina, preferências e desafios diferentes, e o plano
+                        precisa respeitar isso.</p>
+
+                    <ul class="card-features">
+                        <li>Planejamento 100% individualizado</li>
+                        <li>Ajustado à sua rotina real (não à rotina perfeita do Instagram)</li>
+                        <li>Considera seus hábitos, preferências e limitações</li>
+                        <li>Estratégias práticas para o dia a dia</li>
+                    </ul>
+
+                    <blockquote>O objetivo é simples: criar algo que você consiga seguir de verdade.</blockquote>
+                </div>
+
+                <div class="card">
+                    <span class="card-number">3</span>
+                    <h3>Ajustes estratégicos e contínuos</h3>
+                    <p class="card-intro">O acompanhamento não é estático, ele evolui com você.</p>
+
+                    <ul class="card-features">
+                        <li>Ajustes na ingestão energética conforme necessário</li>
+                        <li>Adaptação da rotina ao longo do processo</li>
+                        <li>Alinhamento constante de expectativas</li>
+                        <li>Trabalho ativo no comportamento alimentar</li>
+                    </ul>
+
+                    <blockquote>Pequenos ajustes, feitos da forma certa, geram grandes mudanças fisiológicas ao longo do
+                        tempo.</blockquote>
+                </div>
+
+                <div class="card">
+                    <span class="card-number">4</span>
+                    <h3>O diferencial: aderência real ao processo</h3>
+                    <p class="card-intro">Essa é a parte que a maioria ignora, e onde está o verdadeiro resultado.</p>
+
+                    <ul class="card-features">
+                        <li>Construção de consistência sem obsessão</li>
+                        <li>Fim do ciclo “tudo ou nada”</li>
+                        <li>Estratégias para manter o plano no longo prazo</li>
+                        <li>Cuidado com sua saúde mental e metabólica</li>
+                    </ul>
+
+                    <blockquote>Se não for sustentável, não faz sentido.</blockquote>
+                </div>
+
+                <div class="card">
+                    <span class="card-number">5</span>
+                    <h3>Evolução real, mensurável e sustentável</h3>
+                    <p class="card-intro">Aqui, o foco não é só resultado rápido, é resultado que permanece.</p>
+
+                    <ul class="card-features">
+                        <li>Melhora da composição corporal</li>
+                        <li>Evolução da performance física</li>
+                        <li>Relação mais saudável com a comida</li>
+                        <li>Desenvolvimento de autonomia</li>
+                    </ul>
+
+                    <blockquote>Você evolui, sem se destruir no processo.</blockquote>
+                </div>
+
+                <div class="card">
+                    <span class="card-number">6</span>
+                    <h3>O método na prática</h3>
+                    <p class="card-intro">Antes de pensar em uma “dieta perfeita”, seguimos um processo claro:</p>
+
+                    <ul class="card-features">
+                        <li>Basear</li>
+                        <li>Ajustar</li>
+                        <li>Sustentar</li>
+                        <li>Evoluir</li>
+                    </ul>
+
+                    <blockquote>Esse é o caminho para resultados reais e consistentes.</blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="jornada-section" id="servicos">
+            <header class="section-header">
+                <h2>Como funciona o <span>acompanhamento?</span></h2>
+            </header>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <span class="icon-placeholder">📋</span>
+                        <h3>1. Consulta inicial e planejamento personalizado</h3>
+                        <p>Começamos com uma consulta completa para entender seus objetivos, sua rotina e suas
+                            dificuldades.</p>
+                        <p>Durante essa consulta, o plano alimentar já é elaborado junto com você, em tempo real,
+                            respeitando seus gostos e evitando alimentos que você não gosta.</p>
+                        <p class="highlight-text">Tudo é pensado para fazer sentido na sua vida.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <span class="icon-placeholder">🔄</span>
+                        <h3>2. Acompanhamento e ajustes contínuos</h3>
+                        <p>Você será acompanhado(a) semanalmente para avaliar sua evolução.</p>
+                        <p>Com base nisso, ajustamos o plano sempre que necessário, garantindo que ele continue
+                            eficiente e adaptado à sua rotina.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <span class="icon-placeholder">💬</span>
+                        <h3>3. Suporte próximo no dia a dia</h3>
+                        <p>Ao longo de todo o processo, você terá suporte para tirar dúvidas e receber orientações.</p>
+                        <p>Isso traz mais segurança, clareza e facilita manter a consistência.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <span class="icon-placeholder">📍</span>
+                        <h3>4. Formato de atendimento e objetivo</h3>
+                        <p>O acompanhamento pode ser feito de forma online ou presencial em Belo Horizonte (MG), de
+                            acordo com o que for melhor para você.</p>
+                        <p class="highlight-text">O foco é te ajudar a conquistar resultados reais, com consistência,
+                            autonomia e sem depender de soluções extremas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a class="btn-whatsapp"
+            href="https://wa.me/5531995366218?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%21"
+            target="_blank">Quero um planejamento feito para mim</a>
+
+        <section class="feedbacks-pacientes" id="resultados">
+            <h2>O que dizem os pacientes</h2>
+            <p>Feedbacks de quem decidiu mudar de vida com constância e sem extremismos.</p>
+            <div class="feedbacks-imagens">
+                <img src="/img/Feedback_1.jpeg" alt="Feedback 1">
+                <img src="/img/Feedback_2.jpeg" alt="Feedback 2">
+                <img src="/img/Feedback_3.jpeg" alt="Feedback 3">
+            </div>
+        </section>
+
+        <section class="sessao-gratuita">
+            <h2>De o primeiro passo com uma sessão de alinhamento
+                100% gratuita</h2>
+            <p>
+                Uma conversa online de 20 a 40 minutos para entender seus objetivos, rotina e dificuldades.
+                Nessa sessão, analiso seu caso e te mostro, de forma clara, os melhores caminhos para alcançar seus
+                resultados.
+                Assim, você consegue avaliar se o acompanhamento faz sentido para você.
+            </p>
+            <a class="btn-whatsapp"
+                href="https://wa.me/5531995366218?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%21"
+                target="_blank">Agendar minha Sessão de alinhamento gratuita</a>
+        </section>
+
+        <section class="faq-section">
+            <h2>Dúvidas Frequentes</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>1. Esse acompanhamento funciona para mim?</summary>
+                    <div class="faq-content">
+                        <p>Sim — o plano é totalmente personalizado para sua rotina, objetivos e dificuldades. Nada é
+                            genérico, tudo é adaptado para você.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>2. Preciso cortar tudo que gosto de comer?</summary>
+                    <div class="faq-content">
+                        <p>Não.</p>
+                        <p>A ideia é incluir o que você gosta de forma equilibrada, para que você consiga manter no
+                            longo prazo.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>3. E se eu não conseguir seguir a dieta?</summary>
+                    <div class="faq-content">
+                        <p>Faz parte do processo.</p>
+                        <p>Vamos ajustar o plano até encontrar uma estratégia que funcione de verdade para você.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>4. O acompanhamento online funciona mesmo?</summary>
+                    <div class="faq-content">
+                        <p>Sim — você terá acompanhamento, ajustes e suporte da mesma forma. Com mais praticidade e
+                            flexibilidade no dia a dia.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>5. Como faço para começar?</summary>
+                    <div class="faq-content">
+                        <p>É só agendar sua sessão de alinhamento gratuita.</p>
+                        <p>Nela, vou entender seu caso e te mostrar o melhor caminho para seus resultados.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/douglasbraga_nutri?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank" rel="noopener noreferrer" aria-label="Siga-me no Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icone-insta">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+        </a>
+        <p>&copy; 2026 Douglas Nutri. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const carrossel = document.getElementById('pacientes-carousel');
+
+        function moverCarrossel(direcao) {
+            const slide = document.querySelector('.carousel-slide');
+            const tamanhoDeUmPulo = slide.offsetWidth + 16; 
+
+            if (direcao === 1 && (carrossel.scrollLeft + carrossel.clientWidth >= carrossel.scrollWidth - 20)) {
+                carrossel.scrollTo({ left: 0, behavior: 'smooth' });
+            } 
+
+            else if (direcao === -1 && carrossel.scrollLeft <= 20) {
+                carrossel.scrollTo({ left: carrossel.scrollWidth, behavior: 'smooth' });
+            } 
+
+            else {
+                carrossel.scrollBy({ left: tamanhoDeUmPulo * direcao, behavior: 'smooth' });
+            }
+        }
+
+        function iniciarCarrosselAutomatico() {
+            setInterval(() => {
+                moverCarrossel(1); 
+            }, 4000);
+        }
+
+        iniciarCarrosselAutomatico();
+    </script>
+</body>
+
+</html>
