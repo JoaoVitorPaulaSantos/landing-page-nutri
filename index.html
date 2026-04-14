@@ -38,7 +38,7 @@
 
     <main>
         <section class="call-action">
-            <h1 class="titulo-pagina">Resultados reais e consistentes <br>sem dieta radical e baseado em ciência</h1>
+            <h1 class="titulo-pagina">Resultados reais e consistentes, <br>sem dieta radical e baseados em ciência</h1>
             <p class="texto-introducao">Para quem treina, trabalha, não quer abrir mão de tudo e <br>cansou de recomeçar
                 toda segunda</p>
 
@@ -69,7 +69,7 @@
                     <img src="/img/Douglas_Antes.jpeg" alt="Douglas antes da transformação">
                 </div>
                 <div class="image-box after-image">
-                    <img src="/img/Douglas_Depois.jpeg" alt="Douglas depois da transformação">
+                    <img src="/img/Douglas_Depois.2.JPG" alt="Douglas depois da transformação">
                 </div>
             </div>
 
@@ -305,10 +305,32 @@
         <section class="feedbacks-pacientes" id="resultados">
             <h2>O que dizem os pacientes</h2>
             <p>Feedbacks de quem decidiu mudar de vida com constância e sem extremismos.</p>
-            <div class="feedbacks-imagens">
-                <img src="/img/Feedback_1.jpeg" alt="Feedback 1">
-                <img src="/img/Feedback_2.jpeg" alt="Feedback 2">
-                <img src="/img/Feedback_3.jpeg" alt="Feedback 3">
+
+            <div class="carousel-wrapper">
+                <div class="carousel-container" id="feedbacks-carousel">
+                    <div class="carousel-slide">
+                        <img src="/img/Feedback_1.jpeg" alt="Feedback do paciente 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/img/Feedback_2.jpeg" alt="Feedback do paciente 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/img/Feedback_3.jpeg" alt="Feedback do paciente 3">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="/img/Feedback_4.jpeg" alt="Feedback do paciente 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/img/Feedback_5.jpeg" alt="Feedback do paciente 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/img/Feedback_6.jpeg" alt="Feedback do paciente 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/img/Feedback_7.jpeg" alt="Feedback do paciente 3">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -321,8 +343,7 @@
                 resultados.
                 Assim, você consegue avaliar se o acompanhamento faz sentido para você.
             </p>
-            <a class="btn-whatsapp"
-                href="https://wa.me/5531995366218?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%21"
+            <a class="btn-whatsapp" href="https://wa.me/5531995366218?text=Gostaria%20da%20sess%C3%A3o%20gratuita"
                 target="_blank">Agendar minha Sessão de alinhamento gratuita</a>
         </section>
 
@@ -388,32 +409,43 @@
     </footer>
 
     <script>
-        const carrossel = document.getElementById('pacientes-carousel');
+        const carrosselPacientes = document.getElementById('pacientes-carousel');
 
         function moverCarrossel(direcao) {
-            const slide = document.querySelector('.carousel-slide');
-            const tamanhoDeUmPulo = slide.offsetWidth + 16; 
 
-            if (direcao === 1 && (carrossel.scrollLeft + carrossel.clientWidth >= carrossel.scrollWidth - 20)) {
-                carrossel.scrollTo({ left: 0, behavior: 'smooth' });
-            } 
+            const slidePaciente = document.querySelector('#pacientes-carousel .carousel-slide');
+            const tamanhoDeUmPulo = slidePaciente.offsetWidth + 16;
 
-            else if (direcao === -1 && carrossel.scrollLeft <= 20) {
-                carrossel.scrollTo({ left: carrossel.scrollWidth, behavior: 'smooth' });
-            } 
 
+            if (direcao === 1 && (carrosselPacientes.scrollLeft + carrosselPacientes.clientWidth >= carrosselPacientes.scrollWidth - 20)) {
+                carrosselPacientes.scrollTo({ left: 0, behavior: 'smooth' });
+            }
+
+            else if (direcao === -1 && carrosselPacientes.scrollLeft <= 20) {
+                carrosselPacientes.scrollTo({ left: carrosselPacientes.scrollWidth, behavior: 'smooth' });
+            }
             else {
-                carrossel.scrollBy({ left: tamanhoDeUmPulo * direcao, behavior: 'smooth' });
+                carrosselPacientes.scrollBy({ left: tamanhoDeUmPulo * direcao, behavior: 'smooth' });
             }
         }
 
-        function iniciarCarrosselAutomatico() {
-            setInterval(() => {
-                moverCarrossel(1); 
-            }, 4000);
+        const carrosselFeedbacks = document.getElementById('feedbacks-carousel');
+
+        function rolarFeedbacksAutomaticamente() {
+            const slideFeedback = document.querySelector('#feedbacks-carousel .carousel-slide');
+            if (!slideFeedback) return;
+
+            const puloFeedback = slideFeedback.offsetWidth + 16;
+
+            if (carrosselFeedbacks.scrollLeft + carrosselFeedbacks.clientWidth >= carrosselFeedbacks.scrollWidth - 20) {
+                carrosselFeedbacks.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                carrosselFeedbacks.scrollBy({ left: puloFeedback, behavior: 'smooth' });
+            }
         }
 
-        iniciarCarrosselAutomatico();
+        setInterval(rolarFeedbacksAutomaticamente, 5000);
+
     </script>
 </body>
 

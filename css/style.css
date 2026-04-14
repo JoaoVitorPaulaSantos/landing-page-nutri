@@ -548,9 +548,17 @@ header nav ul li {
 }
 
 .feedbacks-pacientes {
-    padding: 4rem 1.5rem;
+    padding: 1rem 1.5rem;
     background-color: #cdd5db;
     text-align: center;
+}
+
+#feedbacks-carousel .carousel-slide img {
+    max-height: 450px;
+    width: auto;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .feedbacks-pacientes h2 {
@@ -881,6 +889,15 @@ footer p {
 
     .feedbacks-pacientes img {
         width: 350px;
+        border-radius: 1rem;
+    }
+
+    #feedbacks-carousel {
+        justify-content: flex-start;
+    }
+
+    #feedbacks-carousel .carousel-slide {
+        flex: 0 0 calc(33.33% - 1rem); 
     }
 
     .sessao-gratuita {
